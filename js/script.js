@@ -14,7 +14,7 @@ openForms()
 
 closeForms()   
 
-goList(1)
+goList(2)
 
 goBackList()
 

@@ -49,14 +49,13 @@ function closeForms(){
 function goList(numero){
     for(let i of document.getElementsByClassName('btns-avanc')){
         i.addEventListener('click', (e) => {
-            if(e.target.id == 'btnAvancarClientes'){
+            if(e.target.id === 'btnAvancarClientes'){
                 if(numero > 0 || numero <= clientesLista.length){
                     listCustomer(numero);
                     numero++
                     if(numero > clientesLista.length + 1){
                         alert("Fim da lista de clientes")
-                        customerPositionOne();
-                        numero = 1;
+                        numero = 2;
                     }                
                 }
             }else{
@@ -66,7 +65,7 @@ function goList(numero){
                     if(numero > produtosLista.length + 1){
                         alert("Fim da lista de produtos")
                         productPositionOne()
-                        numero = 1; 
+                        numero = 2; 
                     }
                 }
             }            
